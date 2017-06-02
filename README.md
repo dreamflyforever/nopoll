@@ -1,0 +1,5 @@
+##nopoll
+Websock
+
+##compile
+`scons`
