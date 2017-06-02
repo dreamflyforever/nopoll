@@ -1,0 +1,596 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BEGIN_C_DECLS	nopoll_decl.h	367;"	d
+BEGIN_C_DECLS	nopoll_decl.h	370;"	d
+BEGIN_C_DECLS	nopoll_decl.h	373;"	d
+BUF_SIZE	nopoll.c	771;"	d	file:
+CC	Makefile	/^CC     = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS  = $/;"	m
+COMPILE.c	Makefile	/^COMPILE.c   = $(CC)  $(MY_CFLAGS) $(CFLAGS)   $(CPPFLAGS) -c$/;"	m
+COMPILE.cxx	Makefile	/^COMPILE.cxx = $(CXX) $(MY_CFLAGS) $(CXXFLAGS) $(CPPFLAGS) -c$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS  = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CTAGSFLAGS	Makefile	/^CTAGSFLAGS =$/;"	m
+CUR_PATH_NAMES	Makefile	/^  CUR_PATH_NAMES = $(subst \/,$(SPACE),$(subst $(SPACE),_,$(CURDIR)))$/;"	m
+CXX	Makefile	/^CXX    = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS= $/;"	m
+DEPEND	Makefile	/^DEPEND      = $(CC)  $(DEP_OPT)  $(MY_CFLAGS) $(CFLAGS) $(CPPFLAGS)$/;"	m
+DEPEND.d	Makefile	/^DEPEND.d    = $(subst -g ,,$(DEPEND))$/;"	m
+DEPS	Makefile	/^DEPS    = $(OBJS:.o=.d)$/;"	m
+DEP_OPT	Makefile	/^DEP_OPT = $(shell if `$(CC) --version | grep "GCC" >\/dev\/null`; then \\$/;"	m
+DllMain	nopoll_win32.c	/^BOOL APIENTRY DllMain (HINSTANCE hInst,$/;"	f
+EINPROGRESS	nopoll_win32.h	61;"	d
+EMPTY	Makefile	/^EMPTY   =$/;"	m
+END_C_DECLS	nopoll_decl.h	368;"	d
+END_C_DECLS	nopoll_decl.h	371;"	d
+END_C_DECLS	nopoll_decl.h	374;"	d
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+ETAGSFLAGS	Makefile	/^ETAGSFLAGS =$/;"	m
+HAVE_DLFCN_H	config.h	5;"	d
+HAVE_INTTYPES_H	config.h	8;"	d
+HAVE_MEMORY_H	config.h	11;"	d
+HAVE_STDINT_H	config.h	14;"	d
+HAVE_STDLIB_H	config.h	17;"	d
+HAVE_STRINGS_H	config.h	20;"	d
+HAVE_STRING_H	config.h	23;"	d
+HAVE_SYS_STAT_H	config.h	26;"	d
+HAVE_SYS_TYPES_H	config.h	29;"	d
+HAVE_UNISTD_H	config.h	32;"	d
+HDREXTS	Makefile	/^HDREXTS = .h .H .hh .hpp .HPP .h++ .hxx .hp$/;"	m
+HEADERS	Makefile	/^HEADERS = $(foreach d,$(SRCDIRS),$(wildcard $(addprefix $(d)\/*,$(HDREXTS))))$/;"	m
+INT_TO_PTR	nopoll_config.h	28;"	d
+INT_TO_PTR	nopoll_config_win32.h	44;"	d
+INT_TO_PTR	nopoll_config_win64.h	46;"	d
+LDFLAGS	Makefile	/^LDFLAGS   = -lssl$/;"	m
+LINK.c	Makefile	/^LINK.c      = $(CC)  $(MY_CFLAGS) $(CFLAGS)   $(CPPFLAGS) $(LDFLAGS)$/;"	m
+LINK.cxx	Makefile	/^LINK.cxx    = $(CXX) $(MY_CFLAGS) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS)$/;"	m
+LOG_DOMAIN	nopoll_win32.c	42;"	d	file:
+LT_OBJDIR	config.h	36;"	d
+MY_CFLAGS	Makefile	/^MY_CFLAGS = -g -I.$/;"	m
+NOPOLL_64BIT_PLATFORM	nopoll_config.h	63;"	d
+NOPOLL_BINARY_FRAME	nopoll_decl.h	/^	NOPOLL_BINARY_FRAME       = 2,$/;"	e	enum:__anon4
+NOPOLL_CLOSE_FRAME	nopoll_decl.h	/^	NOPOLL_CLOSE_FRAME        = 8,$/;"	e	enum:__anon4
+NOPOLL_CONTINUATION_FRAME	nopoll_decl.h	/^	NOPOLL_CONTINUATION_FRAME = 0,$/;"	e	enum:__anon4
+NOPOLL_EAGAIN	nopoll_decl.h	100;"	d
+NOPOLL_EAGAIN	nopoll_decl.h	134;"	d
+NOPOLL_EINPROGRESS	nopoll_decl.h	132;"	d
+NOPOLL_EINPROGRESS	nopoll_decl.h	98;"	d
+NOPOLL_EINTR	nopoll_decl.h	130;"	d
+NOPOLL_EINTR	nopoll_decl.h	93;"	d
+NOPOLL_ENOTCONN	nopoll_decl.h	133;"	d
+NOPOLL_ENOTCONN	nopoll_decl.h	99;"	d
+NOPOLL_EWOULDBLOCK	nopoll_decl.h	131;"	d
+NOPOLL_EWOULDBLOCK	nopoll_decl.h	97;"	d
+NOPOLL_HAVE_VASPRINTF	nopoll_config.h	58;"	d
+NOPOLL_INVALID_SOCKET	nopoll_decl.h	102;"	d
+NOPOLL_INVALID_SOCKET	nopoll_decl.h	138;"	d
+NOPOLL_IO_ENGINE_DEFAULT	nopoll_decl.h	/^	NOPOLL_IO_ENGINE_DEFAULT,$/;"	e	enum:__anon3
+NOPOLL_IO_ENGINE_EPOLL	nopoll_decl.h	/^	NOPOLL_IO_ENGINE_EPOLL$/;"	e	enum:__anon3
+NOPOLL_IO_ENGINE_POLL	nopoll_decl.h	/^	NOPOLL_IO_ENGINE_POLL,$/;"	e	enum:__anon3
+NOPOLL_IO_ENGINE_SELECT	nopoll_decl.h	/^	NOPOLL_IO_ENGINE_SELECT,$/;"	e	enum:__anon3
+NOPOLL_LEVEL_CRITICAL	nopoll_decl.h	/^	NOPOLL_LEVEL_CRITICAL}  $/;"	e	enum:__anon1
+NOPOLL_LEVEL_DEBUG	nopoll_decl.h	/^	NOPOLL_LEVEL_DEBUG, $/;"	e	enum:__anon1
+NOPOLL_LEVEL_WARNING	nopoll_decl.h	/^	NOPOLL_LEVEL_WARNING, $/;"	e	enum:__anon1
+NOPOLL_METHOD_SSLV23	nopoll_decl.h	/^	NOPOLL_METHOD_SSLV23      = 2,$/;"	e	enum:__anon5
+NOPOLL_METHOD_SSLV3	nopoll_decl.h	/^	NOPOLL_METHOD_SSLV3       = 3,$/;"	e	enum:__anon5
+NOPOLL_METHOD_TLSV1	nopoll_decl.h	/^	NOPOLL_METHOD_TLSV1       = 4,$/;"	e	enum:__anon5
+NOPOLL_METHOD_TLSV1_1	nopoll_decl.h	/^	NOPOLL_METHOD_TLSV1_1     = 5$/;"	e	enum:__anon5
+NOPOLL_OS_UNIX	nopoll_config.h	51;"	d
+NOPOLL_OS_WIN32	nopoll_config_win32.h	71;"	d
+NOPOLL_OS_WIN32	nopoll_config_win64.h	73;"	d
+NOPOLL_OS_WIN64	nopoll_config_win64.h	79;"	d
+NOPOLL_PING_FRAME	nopoll_decl.h	/^	NOPOLL_PING_FRAME         = 9,$/;"	e	enum:__anon4
+NOPOLL_PONG_FRAME	nopoll_decl.h	/^	NOPOLL_PONG_FRAME         = 10$/;"	e	enum:__anon4
+NOPOLL_ROLE_CLIENT	nopoll_decl.h	/^	NOPOLL_ROLE_CLIENT,$/;"	e	enum:__anon2
+NOPOLL_ROLE_LISTENER	nopoll_decl.h	/^	NOPOLL_ROLE_LISTENER,$/;"	e	enum:__anon2
+NOPOLL_ROLE_MAIN_LISTENER	nopoll_decl.h	/^	NOPOLL_ROLE_MAIN_LISTENER$/;"	e	enum:__anon2
+NOPOLL_ROLE_UNKNOWN	nopoll_decl.h	/^	NOPOLL_ROLE_UNKNOWN,$/;"	e	enum:__anon2
+NOPOLL_SOCKET	nopoll_decl.h	101;"	d
+NOPOLL_SOCKET	nopoll_decl.h	137;"	d
+NOPOLL_SOCKET_ERROR	nopoll_decl.h	103;"	d
+NOPOLL_SOCKET_ERROR	nopoll_decl.h	139;"	d
+NOPOLL_TEXT_FRAME	nopoll_decl.h	/^	NOPOLL_TEXT_FRAME         = 1,$/;"	e	enum:__anon4
+NOPOLL_UNKNOWN_OP_CODE	nopoll_decl.h	/^	NOPOLL_UNKNOWN_OP_CODE = -1,$/;"	e	enum:__anon4
+OBJS	Makefile	/^OBJS    = $(addsuffix .o, $(basename $(SOURCES)))$/;"	m
+PACKAGE	config.h	39;"	d
+PACKAGE_BUGREPORT	config.h	42;"	d
+PACKAGE_NAME	config.h	45;"	d
+PACKAGE_STRING	config.h	48;"	d
+PACKAGE_TARNAME	config.h	51;"	d
+PACKAGE_URL	config.h	54;"	d
+PACKAGE_VERSION	config.h	57;"	d
+PROGRAM	Makefile	/^    PROGRAM = a.out$/;"	m
+PROGRAM	Makefile	/^  PROGRAM = $(word $(words $(CUR_PATH_NAMES)),$(CUR_PATH_NAMES))$/;"	m
+PROGRAM	Makefile	/^PROGRAM   = fos$/;"	m
+PTR_TO_INT	nopoll_config.h	43;"	d
+PTR_TO_INT	nopoll_config_win32.h	59;"	d
+PTR_TO_INT	nopoll_config_win64.h	61;"	d
+RM	Makefile	/^RM     = rm -f$/;"	m
+SHELL	Makefile	/^SHELL   = \/bin\/sh$/;"	m
+SHUT_RDWR	nopoll_decl.h	135;"	d
+SHUT_WR	nopoll_decl.h	136;"	d
+SIZEOF_INT	config.h	60;"	d
+SIZEOF_LONG	config.h	63;"	d
+SIZEOF_VOID_P	config.h	66;"	d
+SOURCES	Makefile	/^SOURCES = $(foreach d,$(SRCDIRS),$(wildcard $(addprefix $(d)\/*,$(SRCEXTS))))$/;"	m
+SPACE	Makefile	/^SPACE   = $(EMPTY) $(EMPTY)$/;"	m
+SRCDIRS	Makefile	/^  SRCDIRS = .$/;"	m
+SRCDIRS	Makefile	/^SRCDIRS   = .$/;"	m
+SRCEXTS	Makefile	/^SRCEXTS = .c .C .cc .cpp .CPP .c++ .cxx .cp$/;"	m
+SRC_CXX	Makefile	/^SRC_CXX = $(filter-out %.c,$(SOURCES))$/;"	m
+STDC_HEADERS	config.h	69;"	d
+STRIP	Makefile	/^  STRIP = echo$/;"	m
+STRIP	Makefile	/^STRIP  = strip$/;"	m
+S_ISLNK	nopoll_decl.h	148;"	d
+VERSION	config.h	72;"	d
+_GNU_SOURCE	nopoll_decl.h	57;"	d
+_GNU_SOURCE	nopoll_log.h	65;"	d
+_WIN32_WINNT	nopoll_decl.h	117;"	d
+__NOPOLL_CONFIG_H__	nopoll_config.h	9;"	d
+__NOPOLL_CONFIG_H__	nopoll_config_win32.h	25;"	d
+__NOPOLL_CONFIG_H__	nopoll_config_win64.h	25;"	d
+__NOPOLL_CONN_H__	nopoll_conn.h	40;"	d
+__NOPOLL_CONN_OPTS_H__	nopoll_conn_opts.h	40;"	d
+__NOPOLL_CTX_H__	nopoll_ctx.h	40;"	d
+__NOPOLL_DECL_H__	nopoll_decl.h	40;"	d
+__NOPOLL_FILE__	nopoll_decl.h	61;"	d
+__NOPOLL_FILE__	nopoll_decl.h	65;"	d
+__NOPOLL_FILE__	nopoll_decl.h	70;"	d
+__NOPOLL_HANDLERS_H__	nopoll_handlers.h	40;"	d
+__NOPOLL_H__	nopoll.h	40;"	d
+__NOPOLL_IO_H__	nopoll_io.h	40;"	d
+__NOPOLL_LINE__	nopoll_decl.h	60;"	d
+__NOPOLL_LINE__	nopoll_decl.h	64;"	d
+__NOPOLL_LINE__	nopoll_decl.h	69;"	d
+__NOPOLL_LISTENER_H__	nopoll_listener.h	40;"	d
+__NOPOLL_LOG_H__	nopoll_log.h	40;"	d
+__NOPOLL_LOOP_H__	nopoll_loop.h	40;"	d
+__NOPOLL_MSG_H__	nopoll_msg.h	40;"	d
+__NOPOLL_PRETTY_FUNCTION__	nopoll_decl.h	59;"	d
+__NOPOLL_PRETTY_FUNCTION__	nopoll_decl.h	63;"	d
+__NOPOLL_PRETTY_FUNCTION__	nopoll_decl.h	68;"	d
+__NOPOLL_PRIVATE_H__	nopoll_private.h	40;"	d
+__NOPOLL_WIN32_H__	nopoll_win32.h	41;"	d
+__file__	nopoll_log.h	69;"	d
+__file__	nopoll_log.h	73;"	d
+__file__	nopoll_log.h	78;"	d
+__function_name__	nopoll_log.h	67;"	d
+__function_name__	nopoll_log.h	71;"	d
+__function_name__	nopoll_log.h	76;"	d
+__line__	nopoll_log.h	68;"	d
+__line__	nopoll_log.h	72;"	d
+__line__	nopoll_log.h	77;"	d
+__nopoll_conn_accept_complete_common	nopoll_conn.c	/^nopoll_bool __nopoll_conn_accept_complete_common (noPollCtx * ctx, noPollConnOpts * options, noPollConn * listener, noPollConn * conn, NOPOLL_SOCKET session, nopoll_bool tls_on) {$/;"	f
+__nopoll_conn_get_client_init	nopoll_conn.c	/^char * __nopoll_conn_get_client_init (noPollConn * conn, noPollConnOpts * opts)$/;"	f
+__nopoll_conn_get_ssl_context	nopoll_conn.c	/^SSL_CTX * __nopoll_conn_get_ssl_context (noPollCtx * ctx, noPollConn * conn, noPollConnOpts * opts, nopoll_bool is_client)$/;"	f
+__nopoll_conn_new_common	nopoll_conn.c	/^noPollConn * __nopoll_conn_new_common (noPollCtx       * ctx,$/;"	f
+__nopoll_conn_opts_free_common	nopoll_conn_opts.c	/^void __nopoll_conn_opts_free_common  (noPollConnOpts * opts)$/;"	f
+__nopoll_conn_opts_release_if_needed	nopoll_conn_opts.c	/^void __nopoll_conn_opts_release_if_needed (noPollConnOpts * options)$/;"	f
+__nopoll_conn_receive	nopoll_conn.c	/^int         __nopoll_conn_receive  (noPollConn * conn, char  * buffer, int  maxlen)$/;"	f
+__nopoll_conn_send_common	nopoll_conn.c	/^int           __nopoll_conn_send_common (noPollConn * conn, const char * content, long length, nopoll_bool has_fin, long sleep_in_header, noPollOpCode frame_type)$/;"	f
+__nopoll_conn_set_ssl_client_options	nopoll_conn.c	/^nopoll_bool __nopoll_conn_set_ssl_client_options (noPollCtx * ctx, noPollConn * conn, noPollConnOpts * options)$/;"	f
+__nopoll_conn_ssl_ctx_debug	nopoll_conn.c	/^noPollCtx * __nopoll_conn_ssl_ctx_debug = NULL;$/;"	v
+__nopoll_conn_ssl_verify_callback	nopoll_conn.c	/^int __nopoll_conn_ssl_verify_callback (int ok, X509_STORE_CTX * store) {$/;"	f
+__nopoll_conn_tls_handle_error	nopoll_conn.c	/^int __nopoll_conn_tls_handle_error (noPollConn * conn, int res, const char * label, nopoll_bool * needs_retry)$/;"	f
+__nopoll_ctx_sigpipe_do_nothing	nopoll_ctx.c	/^void __nopoll_ctx_sigpipe_do_nothing (int _signal)$/;"	f
+__nopoll_log	nopoll_log.c	/^void __nopoll_log (noPollCtx * ctx, const char * function_name, const char * file, int line, noPollDebugLevel level, const char * message, ...)$/;"	f
+__nopoll_mutex_create	nopoll.c	/^noPollMutexCreate   __nopoll_mutex_create  = NULL;$/;"	v
+__nopoll_mutex_destroy	nopoll.c	/^noPollMutexDestroy  __nopoll_mutex_destroy = NULL;$/;"	v
+__nopoll_mutex_lock	nopoll.c	/^noPollMutexLock     __nopoll_mutex_lock    = NULL;$/;"	v
+__nopoll_mutex_unlock	nopoll.c	/^noPollMutexUnlock   __nopoll_mutex_unlock  = NULL;$/;"	v
+__nopoll_nonce_init	nopoll.c	/^nopoll_bool __nopoll_nonce_init = nopoll_false;$/;"	v
+__nopoll_pack_content	nopoll_conn.c	/^void __nopoll_pack_content (char * buffer, int start, int bytes)$/;"	f
+__nopoll_regtest_mutex_create	nopoll-regression-client.c	/^noPollPtr __nopoll_regtest_mutex_create (void) {$/;"	f
+__nopoll_regtest_mutex_destroy	nopoll-regression-client.c	/^void __nopoll_regtest_mutex_destroy (noPollPtr _mutex) {$/;"	f
+__nopoll_regtest_mutex_lock	nopoll-regression-client.c	/^void __nopoll_regtest_mutex_lock (noPollPtr _mutex) {$/;"	f
+__nopoll_regtest_mutex_unlock	nopoll-regression-client.c	/^void __nopoll_regtest_mutex_unlock (noPollPtr _mutex) {$/;"	f
+__nopoll_tls_was_init	nopoll_conn.c	/^nopoll_bool __nopoll_tls_was_init = nopoll_false;$/;"	v
+__nopoll_win32_blocking_socket_set	nopoll_win32.c	/^int      __nopoll_win32_blocking_socket_set (NOPOLL_SOCKET socket,$/;"	f
+__nopoll_win32_was_init	nopoll_win32.c	/^nopoll_bool __nopoll_win32_was_init = nopoll_false;$/;"	v
+__report_critical	nopoll-regression-client.c	/^void __report_critical (noPollCtx * ctx, noPollDebugLevel level, const char * log_msg, noPollPtr user_data)$/;"	f
+__test_22_on_close	nopoll-regression-client.c	/^void __test_22_on_close (noPollCtx * ctx, noPollConn * conn, noPollPtr user_data)$/;"	f
+__test_22_on_close_signal	nopoll-regression-client.c	/^nopoll_bool __test_22_on_close_signal = nopoll_false;$/;"	v
+_noPollCertificate	nopoll_private.h	/^typedef struct _noPollCertificate {$/;"	s
+_noPollConn	nopoll_private.h	/^struct _noPollConn {$/;"	s
+_noPollConnOpts	nopoll_private.h	/^struct _noPollConnOpts {$/;"	s
+_noPollCtx	nopoll_private.h	/^struct _noPollCtx {$/;"	s
+_noPollHandshake	nopoll_private.h	/^struct _noPollHandshake {$/;"	s
+_noPollIoEngine	nopoll_private.h	/^struct _noPollIoEngine {$/;"	s
+_noPollMsg	nopoll_private.h	/^struct _noPollMsg {$/;"	s
+_noPollSelect	nopoll_io.c	/^typedef struct _noPollSelect {$/;"	s	file:
+accepted_protocol	nopoll_private.h	/^	char           * accepted_protocol;$/;"	m	struct:_noPollConn
+addto	nopoll_private.h	/^	noPollIoMechAddTo      addto;$/;"	m	struct:_noPollIoEngine
+backlog	nopoll_private.h	/^	int         backlog;$/;"	m	struct:_noPollCtx
+ca_certificate	nopoll_private.h	/^	char * ca_certificate;$/;"	m	struct:_noPollConnOpts
+certificate	nopoll_private.h	/^	char           * certificate;$/;"	m	struct:_noPollConn
+certificate	nopoll_private.h	/^	char * certificate;$/;"	m	struct:_noPollConnOpts
+certificateFile	nopoll_private.h	/^	char * certificateFile;$/;"	m	struct:_noPollCertificate
+certificates	nopoll_private.h	/^	noPollCertificate *  certificates;$/;"	m	struct:_noPollCtx
+certificates_length	nopoll_private.h	/^	int                  certificates_length;$/;"	m	struct:_noPollCtx
+chain_certificate	nopoll_private.h	/^	char           * chain_certificate;$/;"	m	struct:_noPollConn
+chain_certificate	nopoll_private.h	/^	char * chain_certificate;$/;"	m	struct:_noPollConnOpts
+clear	nopoll_private.h	/^	noPollIoMechClear      clear;$/;"	m	struct:_noPollIoEngine
+conn_connect_std_timeout	nopoll_private.h	/^	long        conn_connect_std_timeout;$/;"	m	struct:_noPollCtx
+conn_id	nopoll_private.h	/^        int               conn_id;$/;"	m	struct:_noPollCtx
+conn_length	nopoll_private.h	/^	int               conn_length;$/;"	m	struct:_noPollCtx
+conn_list	nopoll_private.h	/^	noPollConn     ** conn_list;$/;"	m	struct:_noPollCtx
+conn_num	nopoll_private.h	/^	int               conn_num;$/;"	m	struct:_noPollCtx
+connection_upgrade	nopoll_private.h	/^	nopoll_bool     connection_upgrade;$/;"	m	struct:_noPollHandshake
+context_creator	nopoll_private.h	/^	noPollSslContextCreator context_creator;$/;"	m	struct:_noPollCtx
+context_creator_data	nopoll_private.h	/^	noPollPtr               context_creator_data;$/;"	m	struct:_noPollCtx
+cookie	nopoll_private.h	/^	char          * cookie;$/;"	m	struct:_noPollHandshake
+cookie	nopoll_private.h	/^	char * cookie;$/;"	m	struct:_noPollConnOpts
+create	nopoll_private.h	/^	noPollIoMechCreate     create;$/;"	m	struct:_noPollIoEngine
+create_ctx	nopoll-regression-client.c	/^noPollCtx * create_ctx (void) {$/;"	f
+ctx	nopoll_io.c	/^	noPollCtx          * ctx;$/;"	m	struct:_noPollSelect	file:
+ctx	nopoll_private.h	/^	noPollCtx            * ctx;$/;"	m	struct:_noPollIoEngine
+ctx	nopoll_private.h	/^	noPollCtx      * ctx;$/;"	m	struct:_noPollConn
+debug	nopoll-regression-client.c	/^nopoll_bool debug = nopoll_false;$/;"	v
+debug_color_enabled	nopoll_private.h	/^	nopoll_bool     debug_color_enabled;$/;"	m	struct:_noPollCtx
+debug_enabled	nopoll_private.h	/^	nopoll_bool     debug_enabled;$/;"	m	struct:_noPollCtx
+destroy	nopoll_private.h	/^	noPollIoMechDestroy    destroy;$/;"	m	struct:_noPollIoEngine
+disable_ssl_verify	nopoll_private.h	/^	nopoll_bool  disable_ssl_verify;$/;"	m	struct:_noPollConnOpts
+errno	nopoll_decl.h	182;"	d
+errno	nopoll_decl.h	184;"	d
+expected_accept	nopoll_private.h	/^	char          * expected_accept;$/;"	m	struct:_noPollHandshake
+get_url	nopoll_private.h	/^	char           * get_url;$/;"	m	struct:_noPollConn
+handshake	nopoll_private.h	/^	noPollHandShake  * handshake;$/;"	m	struct:_noPollConn
+handshake_ok	nopoll_private.h	/^	nopoll_bool      handshake_ok;$/;"	m	struct:_noPollConn
+has_fin	nopoll_private.h	/^	nopoll_bool    has_fin;$/;"	m	struct:_noPollMsg
+hook	nopoll_private.h	/^	noPollPtr             hook;$/;"	m	struct:_noPollConn
+host	nopoll_private.h	/^	char           * host;$/;"	m	struct:_noPollConn
+host_name	nopoll_private.h	/^	char           * host_name;$/;"	m	struct:_noPollConn
+id	nopoll_private.h	/^	int              id;$/;"	m	struct:_noPollConn
+interface	nopoll_private.h	/^	char * interface;$/;"	m	struct:_noPollConnOpts
+io_engine	nopoll_private.h	/^	noPollIoEngine * io_engine;$/;"	m	struct:_noPollCtx
+io_object	nopoll_private.h	/^	noPollPtr              io_object;$/;"	m	struct:_noPollIoEngine
+is_fragment	nopoll_private.h	/^	nopoll_bool    is_fragment;$/;"	m	struct:_noPollMsg
+is_masked	nopoll_private.h	/^	nopoll_bool    is_masked;$/;"	m	struct:_noPollMsg
+isset	nopoll_private.h	/^	noPollIoMechIsSet      isset;$/;"	m	struct:_noPollIoEngine
+keep_looping	nopoll_private.h	/^	nopoll_bool     keep_looping;$/;"	m	struct:_noPollCtx
+length	nopoll_io.c	/^	int                  length;$/;"	m	struct:_noPollSelect	file:
+listener	nopoll_private.h	/^	noPollConn          * listener;$/;"	m	struct:_noPollConn
+log_handler	nopoll_private.h	/^	noPollLogHandler     log_handler;$/;"	m	struct:_noPollCtx
+log_user_data	nopoll_private.h	/^	noPollPtr            log_user_data;$/;"	m	struct:_noPollCtx
+main	nopoll-regression-client.c	/^int main (int argc, char ** argv)$/;"	f
+mask	nopoll_private.h	/^	char           mask[4];$/;"	m	struct:_noPollMsg
+max_fds	nopoll_io.c	/^	int                  max_fds;$/;"	m	struct:_noPollSelect	file:
+mutex	nopoll_private.h	/^	noPollPtr            mutex;$/;"	m	struct:_noPollConnOpts
+noPollActionHandler	nopoll_handlers.h	/^typedef nopoll_bool (*noPollActionHandler) (noPollCtx * ctx, noPollConn * conn, noPollPtr user_data);$/;"	t
+noPollCertificate	nopoll_private.h	/^} noPollCertificate;$/;"	t	typeref:struct:_noPollCertificate
+noPollConn	nopoll_decl.h	/^typedef struct _noPollConn noPollConn;$/;"	t	typeref:struct:_noPollConn
+noPollConnOpts	nopoll_decl.h	/^typedef struct _noPollConnOpts noPollConnOpts;$/;"	t	typeref:struct:_noPollConnOpts
+noPollCtx	nopoll_decl.h	/^typedef struct _noPollCtx noPollCtx;$/;"	t	typeref:struct:_noPollCtx
+noPollDebugLevel	nopoll_decl.h	/^noPollDebugLevel;$/;"	t	typeref:enum:__anon1
+noPollForeachConn	nopoll_handlers.h	/^typedef nopoll_bool (*noPollForeachConn)  (noPollCtx  * ctx,$/;"	t
+noPollHandShake	nopoll_decl.h	/^typedef struct _noPollHandshake noPollHandShake;$/;"	t	typeref:struct:_noPollHandshake
+noPollIoEngine	nopoll_decl.h	/^typedef struct _noPollIoEngine noPollIoEngine;$/;"	t	typeref:struct:_noPollIoEngine
+noPollIoEngineType	nopoll_decl.h	/^} noPollIoEngineType;$/;"	t	typeref:enum:__anon3
+noPollIoMechAddTo	nopoll_handlers.h	/^typedef nopoll_bool (*noPollIoMechAddTo)  (int               fds, $/;"	t
+noPollIoMechClear	nopoll_handlers.h	/^typedef void (*noPollIoMechClear)  (noPollCtx * ctx, noPollPtr io_object);$/;"	t
+noPollIoMechCreate	nopoll_handlers.h	/^typedef noPollPtr (*noPollIoMechCreate)  (noPollCtx * ctx);$/;"	t
+noPollIoMechDestroy	nopoll_handlers.h	/^typedef void (*noPollIoMechDestroy)  (noPollCtx * ctx, noPollPtr io_object);$/;"	t
+noPollIoMechIsSet	nopoll_handlers.h	/^typedef nopoll_bool (*noPollIoMechIsSet)  (noPollCtx       * ctx,$/;"	t
+noPollIoMechWait	nopoll_handlers.h	/^typedef int (*noPollIoMechWait)  (noPollCtx * ctx, noPollPtr io_object);$/;"	t
+noPollLogHandler	nopoll_handlers.h	/^typedef void (*noPollLogHandler) (noPollCtx * ctx, noPollDebugLevel level, const char * log_msg, noPollPtr user_data);$/;"	t
+noPollMsg	nopoll_decl.h	/^typedef struct _noPollMsg noPollMsg;$/;"	t	typeref:struct:_noPollMsg
+noPollMutexCreate	nopoll_handlers.h	/^typedef noPollPtr (*noPollMutexCreate) (void);$/;"	t
+noPollMutexDestroy	nopoll_handlers.h	/^typedef void (*noPollMutexDestroy) (noPollPtr mutex);$/;"	t
+noPollMutexLock	nopoll_handlers.h	/^typedef void (*noPollMutexLock) (noPollPtr mutex);$/;"	t
+noPollMutexUnlock	nopoll_handlers.h	/^typedef void (*noPollMutexUnlock) (noPollPtr mutex);$/;"	t
+noPollOnCloseHandler	nopoll_handlers.h	/^typedef void (*noPollOnCloseHandler)    (noPollCtx  * ctx,$/;"	t
+noPollOnMessageHandler	nopoll_handlers.h	/^typedef void (*noPollOnMessageHandler) (noPollCtx  * ctx,$/;"	t
+noPollOpCode	nopoll_decl.h	/^} noPollOpCode;$/;"	t	typeref:enum:__anon4
+noPollPtr	nopoll_decl.h	/^typedef void * noPollPtr;$/;"	t
+noPollRead	nopoll_handlers.h	/^typedef int (*noPollRead) (noPollConn * conn,$/;"	t
+noPollRole	nopoll_decl.h	/^} noPollRole;$/;"	t	typeref:enum:__anon2
+noPollSelect	nopoll_io.c	/^} noPollSelect;$/;"	t	typeref:struct:_noPollSelect	file:
+noPollSslContextCreator	nopoll_handlers.h	/^typedef noPollPtr (*noPollSslContextCreator) (noPollCtx       * ctx, $/;"	t
+noPollSslPostCheck	nopoll_handlers.h	/^typedef nopoll_bool (*noPollSslPostCheck) (noPollCtx      * ctx,$/;"	t
+noPollSslProtocol	nopoll_decl.h	/^} noPollSslProtocol ;$/;"	t	typeref:enum:__anon5
+nopoll_base64_decode	nopoll.c	/^nopoll_bool nopoll_base64_decode (const char * content, $/;"	f
+nopoll_base64_encode	nopoll.c	/^nopoll_bool nopoll_base64_encode (const char  * content, $/;"	f
+nopoll_bool	nopoll_decl.h	/^typedef int nopoll_bool;$/;"	t
+nopoll_calloc	nopoll_decl.c	/^noPollPtr nopoll_calloc(size_t count, size_t size)$/;"	f
+nopoll_cleanup_library	nopoll.c	/^void nopoll_cleanup_library (void)$/;"	f
+nopoll_close_socket	nopoll_decl.h	104;"	d
+nopoll_close_socket	nopoll_decl.h	140;"	d
+nopoll_cmp	nopoll.c	/^nopoll_bool nopoll_cmp (const char * string1, const char * string2)$/;"	f
+nopoll_conn_accept	nopoll_conn.c	/^noPollConn * nopoll_conn_accept (noPollCtx * ctx, noPollConn * listener)$/;"	f
+nopoll_conn_accept_complete	nopoll_conn.c	/^nopoll_bool nopoll_conn_accept_complete (noPollCtx * ctx, noPollConn * listener, noPollConn * conn, NOPOLL_SOCKET session, nopoll_bool tls_on) {$/;"	f
+nopoll_conn_accept_socket	nopoll_conn.c	/^noPollConn * nopoll_conn_accept_socket (noPollCtx * ctx, noPollConn * listener, NOPOLL_SOCKET session)$/;"	f
+nopoll_conn_check_mime_header_repeated	nopoll_conn.c	/^nopoll_bool nopoll_conn_check_mime_header_repeated (noPollConn   * conn, $/;"	f
+nopoll_conn_close	nopoll_conn.c	/^void          nopoll_conn_close  (noPollConn  * conn)$/;"	f
+nopoll_conn_close_ext	nopoll_conn.c	/^void          nopoll_conn_close_ext  (noPollConn  * conn, int status, const char * reason, int reason_size)$/;"	f
+nopoll_conn_complete_handshake	nopoll_conn.c	/^void nopoll_conn_complete_handshake (noPollConn * conn)$/;"	f
+nopoll_conn_complete_handshake_check	nopoll_conn.c	/^void nopoll_conn_complete_handshake_check (noPollConn * conn)$/;"	f
+nopoll_conn_complete_handshake_check_client	nopoll_conn.c	/^nopoll_bool nopoll_conn_complete_handshake_check_client (noPollCtx * ctx, noPollConn * conn)$/;"	f
+nopoll_conn_complete_handshake_check_listener	nopoll_conn.c	/^nopoll_bool nopoll_conn_complete_handshake_check_listener (noPollCtx * ctx, noPollConn * conn)$/;"	f
+nopoll_conn_complete_handshake_client	nopoll_conn.c	/^int nopoll_conn_complete_handshake_client (noPollCtx * ctx, noPollConn * conn, char * buffer, int buffer_size)$/;"	f
+nopoll_conn_complete_handshake_listener	nopoll_conn.c	/^int nopoll_conn_complete_handshake_listener (noPollCtx * ctx, noPollConn * conn, char * buffer, int buffer_size)$/;"	f
+nopoll_conn_complete_pending_write	nopoll_conn.c	/^int nopoll_conn_complete_pending_write (noPollConn * conn)$/;"	f
+nopoll_conn_connect_timeout	nopoll_conn.c	/^void               nopoll_conn_connect_timeout (noPollCtx * ctx,$/;"	f
+nopoll_conn_ctx	nopoll_conn.c	/^noPollCtx   * nopoll_conn_ctx    (noPollConn * conn)$/;"	f
+nopoll_conn_default_receive	nopoll_conn.c	/^int nopoll_conn_default_receive (noPollConn * conn, char * buffer, int buffer_size)$/;"	f
+nopoll_conn_default_send	nopoll_conn.c	/^int nopoll_conn_default_send (noPollConn * conn, char * buffer, int buffer_size)$/;"	f
+nopoll_conn_flush_writes	nopoll_conn.c	/^int nopoll_conn_flush_writes (noPollConn * conn, long timeout, int previous_result)$/;"	f
+nopoll_conn_get_accepted_protocol	nopoll_conn.c	/^const char  * nopoll_conn_get_accepted_protocol (noPollConn * conn)$/;"	f
+nopoll_conn_get_close_reason	nopoll_conn.c	/^const char *  nopoll_conn_get_close_reason (noPollConn * conn)$/;"	f
+nopoll_conn_get_close_status	nopoll_conn.c	/^int           nopoll_conn_get_close_status (noPollConn * conn)$/;"	f
+nopoll_conn_get_connect_timeout	nopoll_conn.c	/^long              nopoll_conn_get_connect_timeout (noPollCtx * ctx)$/;"	f
+nopoll_conn_get_cookie	nopoll_conn.c	/^const char  * nopoll_conn_get_cookie (noPollConn * conn)$/;"	f
+nopoll_conn_get_hook	nopoll_conn.c	/^noPollPtr     nopoll_conn_get_hook (noPollConn * conn)$/;"	f
+nopoll_conn_get_host_header	nopoll_conn.c	/^const char  * nopoll_conn_get_host_header (noPollConn * conn)$/;"	f
+nopoll_conn_get_http_url	nopoll_conn.c	/^nopoll_bool nopoll_conn_get_http_url (noPollConn * conn, const char * buffer, int buffer_size, const char * method, char ** url)$/;"	f
+nopoll_conn_get_id	nopoll_conn.c	/^int           nopoll_conn_get_id (noPollConn * conn)$/;"	f
+nopoll_conn_get_listener	nopoll_conn.c	/^noPollConn  * nopoll_conn_get_listener (noPollConn * conn)$/;"	f
+nopoll_conn_get_mime_header	nopoll_conn.c	/^nopoll_bool nopoll_conn_get_mime_header (noPollCtx * ctx, noPollConn * conn, const char * buffer, int buffer_size, char ** header, char ** value)$/;"	f
+nopoll_conn_get_msg	nopoll_conn.c	/^noPollMsg   * nopoll_conn_get_msg (noPollConn * conn)$/;"	f
+nopoll_conn_get_origin	nopoll_conn.c	/^const char  * nopoll_conn_get_origin (noPollConn * conn)$/;"	f
+nopoll_conn_get_requested_protocol	nopoll_conn.c	/^const char  * nopoll_conn_get_requested_protocol (noPollConn * conn)$/;"	f
+nopoll_conn_host	nopoll_conn.c	/^const char  * nopoll_conn_host   (noPollConn * conn)$/;"	f
+nopoll_conn_is_ok	nopoll_conn.c	/^nopoll_bool    nopoll_conn_is_ok (noPollConn * conn)$/;"	f
+nopoll_conn_is_ready	nopoll_conn.c	/^nopoll_bool    nopoll_conn_is_ready (noPollConn * conn)$/;"	f
+nopoll_conn_is_tls_on	nopoll_conn.c	/^nopoll_bool    nopoll_conn_is_tls_on (noPollConn * conn)$/;"	f
+nopoll_conn_log_ssl	nopoll_conn.c	/^int nopoll_conn_log_ssl (noPollConn * conn)$/;"	f
+nopoll_conn_mask_content	nopoll_conn.c	/^void nopoll_conn_mask_content (noPollCtx * ctx, char * payload, int payload_size, char * mask, int desp)$/;"	f
+nopoll_conn_new	nopoll_conn.c	/^noPollConn * nopoll_conn_new (noPollCtx  * ctx,$/;"	f
+nopoll_conn_new_opts	nopoll_conn.c	/^noPollConn * nopoll_conn_new_opts (noPollCtx       * ctx,$/;"	f
+nopoll_conn_opts_free	nopoll_conn_opts.c	/^void nopoll_conn_opts_free (noPollConnOpts * opts)$/;"	f
+nopoll_conn_opts_new	nopoll_conn_opts.c	/^noPollConnOpts * nopoll_conn_opts_new (void)$/;"	f
+nopoll_conn_opts_ref	nopoll_conn_opts.c	/^nopoll_bool nopoll_conn_opts_ref (noPollConnOpts * opts)$/;"	f
+nopoll_conn_opts_set_cookie	nopoll_conn_opts.c	/^void        nopoll_conn_opts_set_cookie (noPollConnOpts * opts, const char * cookie_content)$/;"	f
+nopoll_conn_opts_set_interface	nopoll_conn_opts.c	/^void nopoll_conn_opts_set_interface    (noPollConnOpts * opts, const char * interface)$/;"	f
+nopoll_conn_opts_set_reuse	nopoll_conn_opts.c	/^void nopoll_conn_opts_set_reuse        (noPollConnOpts * opts, nopoll_bool reuse)$/;"	f
+nopoll_conn_opts_set_ssl_certs	nopoll_conn_opts.c	/^nopoll_bool        nopoll_conn_opts_set_ssl_certs    (noPollConnOpts * opts, $/;"	f
+nopoll_conn_opts_set_ssl_protocol	nopoll_conn_opts.c	/^void nopoll_conn_opts_set_ssl_protocol (noPollConnOpts * opts, noPollSslProtocol ssl_protocol)$/;"	f
+nopoll_conn_opts_skip_origin_check	nopoll_conn_opts.c	/^void        nopoll_conn_opts_skip_origin_check (noPollConnOpts * opts, nopoll_bool skip_check)$/;"	f
+nopoll_conn_opts_ssl_peer_verify	nopoll_conn_opts.c	/^void nopoll_conn_opts_ssl_peer_verify (noPollConnOpts * opts, nopoll_bool verify)$/;"	f
+nopoll_conn_opts_unref	nopoll_conn_opts.c	/^void        nopoll_conn_opts_unref (noPollConnOpts * opts)$/;"	f
+nopoll_conn_pending_write_bytes	nopoll_conn.c	/^int           nopoll_conn_pending_write_bytes (noPollConn * conn)$/;"	f
+nopoll_conn_port	nopoll_conn.c	/^const char  * nopoll_conn_port   (noPollConn * conn)$/;"	f
+nopoll_conn_produce_accept_key	nopoll_conn.c	/^char * nopoll_conn_produce_accept_key (noPollCtx * ctx, const char * websocket_key)$/;"	f
+nopoll_conn_read	nopoll_conn.c	/^int           nopoll_conn_read (noPollConn * conn, char * buffer, int bytes, nopoll_bool block, long int timeout)$/;"	f
+nopoll_conn_readline	nopoll_conn.c	/^int          nopoll_conn_readline (noPollConn * conn, char  * buffer, int  maxlen)$/;"	f
+nopoll_conn_ref	nopoll_conn.c	/^nopoll_bool    nopoll_conn_ref (noPollConn * conn)$/;"	f
+nopoll_conn_ref_count	nopoll_conn.c	/^int            nopoll_conn_ref_count (noPollConn * conn)$/;"	f
+nopoll_conn_role	nopoll_conn.c	/^noPollRole    nopoll_conn_role   (noPollConn * conn)$/;"	f
+nopoll_conn_send_binary	nopoll_conn.c	/^int           nopoll_conn_send_binary (noPollConn * conn, const char * content, long length)$/;"	f
+nopoll_conn_send_binary_fragment	nopoll_conn.c	/^int           nopoll_conn_send_binary_fragment (noPollConn * conn, const char * content, long length)$/;"	f
+nopoll_conn_send_frame	nopoll_conn.c	/^int nopoll_conn_send_frame (noPollConn * conn, nopoll_bool fin, nopoll_bool masked,$/;"	f
+nopoll_conn_send_ping	nopoll_conn.c	/^nopoll_bool      nopoll_conn_send_ping (noPollConn * conn)$/;"	f
+nopoll_conn_send_pong	nopoll_conn.c	/^nopoll_bool      nopoll_conn_send_pong (noPollConn * conn)$/;"	f
+nopoll_conn_send_text	nopoll_conn.c	/^int           nopoll_conn_send_text (noPollConn * conn, const char * content, long length)$/;"	f
+nopoll_conn_send_text_fragment	nopoll_conn.c	/^int           nopoll_conn_send_text_fragment (noPollConn * conn, const char * content, long length)$/;"	f
+nopoll_conn_set_accepted_protocol	nopoll_conn.c	/^void          nopoll_conn_set_accepted_protocol (noPollConn * conn, const char * protocol)$/;"	f
+nopoll_conn_set_bind_interface	nopoll_conn.c	/^nopoll_bool                 nopoll_conn_set_bind_interface (NOPOLL_SOCKET socket,$/;"	f
+nopoll_conn_set_hook	nopoll_conn.c	/^void          nopoll_conn_set_hook (noPollConn * conn, noPollPtr ptr)$/;"	f
+nopoll_conn_set_on_close	nopoll_conn.c	/^void          nopoll_conn_set_on_close (noPollConn            * conn,$/;"	f
+nopoll_conn_set_on_msg	nopoll_conn.c	/^void          nopoll_conn_set_on_msg (noPollConn              * conn,$/;"	f
+nopoll_conn_set_on_ready	nopoll_conn.c	/^void           nopoll_conn_set_on_ready (noPollConn            * conn,$/;"	f
+nopoll_conn_set_sock_block	nopoll_conn.c	/^nopoll_bool                 nopoll_conn_set_sock_block         (NOPOLL_SOCKET socket,$/;"	f
+nopoll_conn_set_sock_tcp_nodelay	nopoll_conn.c	/^nopoll_bool                 nopoll_conn_set_sock_tcp_nodelay   (NOPOLL_SOCKET socket,$/;"	f
+nopoll_conn_set_socket	nopoll_conn.c	/^void           nopoll_conn_set_socket (noPollConn * conn, NOPOLL_SOCKET _socket)$/;"	f
+nopoll_conn_shutdown	nopoll_conn.c	/^void          nopoll_conn_shutdown (noPollConn * conn)$/;"	f
+nopoll_conn_sock_connect	nopoll_conn.c	/^NOPOLL_SOCKET nopoll_conn_sock_connect (noPollCtx       * ctx,$/;"	f
+nopoll_conn_sock_connect_opts	nopoll_conn.c	/^NOPOLL_SOCKET nopoll_conn_sock_connect_opts (noPollCtx       * ctx,$/;"	f
+nopoll_conn_socket	nopoll_conn.c	/^NOPOLL_SOCKET nopoll_conn_socket (noPollConn * conn)$/;"	f
+nopoll_conn_tls_new	nopoll_conn.c	/^noPollConn * nopoll_conn_tls_new (noPollCtx  * ctx,$/;"	f
+nopoll_conn_tls_receive	nopoll_conn.c	/^int nopoll_conn_tls_receive (noPollConn * conn, char * buffer, int buffer_size)$/;"	f
+nopoll_conn_tls_send	nopoll_conn.c	/^int nopoll_conn_tls_send (noPollConn * conn, char * buffer, int buffer_size)$/;"	f
+nopoll_conn_unref	nopoll_conn.c	/^void nopoll_conn_unref (noPollConn * conn)$/;"	f
+nopoll_conn_wait_until_connection_ready	nopoll_conn.c	/^nopoll_bool      nopoll_conn_wait_until_connection_ready (noPollConn * conn,$/;"	f
+nopoll_ctx_conns	nopoll_ctx.c	/^int            nopoll_ctx_conns (noPollCtx * ctx)$/;"	f
+nopoll_ctx_find_certificate	nopoll_ctx.c	/^nopoll_bool    nopoll_ctx_find_certificate (noPollCtx   * ctx, $/;"	f
+nopoll_ctx_foreach_conn	nopoll_ctx.c	/^noPollConn   * nopoll_ctx_foreach_conn (noPollCtx          * ctx, $/;"	f
+nopoll_ctx_new	nopoll_ctx.c	/^noPollCtx * nopoll_ctx_new (void) {$/;"	f
+nopoll_ctx_ref	nopoll_ctx.c	/^nopoll_bool    nopoll_ctx_ref (noPollCtx * ctx)$/;"	f
+nopoll_ctx_ref_count	nopoll_ctx.c	/^int            nopoll_ctx_ref_count (noPollCtx * ctx)$/;"	f
+nopoll_ctx_register_conn	nopoll_ctx.c	/^nopoll_bool           nopoll_ctx_register_conn (noPollCtx  * ctx, $/;"	f
+nopoll_ctx_set_certificate	nopoll_ctx.c	/^nopoll_bool           nopoll_ctx_set_certificate (noPollCtx  * ctx, $/;"	f
+nopoll_ctx_set_on_accept	nopoll_ctx.c	/^void              nopoll_ctx_set_on_accept (noPollCtx            * ctx,$/;"	f
+nopoll_ctx_set_on_msg	nopoll_ctx.c	/^void           nopoll_ctx_set_on_msg    (noPollCtx              * ctx,$/;"	f
+nopoll_ctx_set_on_open	nopoll_ctx.c	/^void           nopoll_ctx_set_on_open (noPollCtx            * ctx,$/;"	f
+nopoll_ctx_set_on_ready	nopoll_ctx.c	/^void           nopoll_ctx_set_on_ready (noPollCtx          * ctx,$/;"	f
+nopoll_ctx_set_post_ssl_check	nopoll_ctx.c	/^void           nopoll_ctx_set_post_ssl_check (noPollCtx          * ctx,$/;"	f
+nopoll_ctx_set_protocol_version	nopoll_ctx.c	/^void           nopoll_ctx_set_protocol_version (noPollCtx * ctx, int version)$/;"	f
+nopoll_ctx_set_ssl_context_creator	nopoll_ctx.c	/^void           nopoll_ctx_set_ssl_context_creator (noPollCtx                * ctx,$/;"	f
+nopoll_ctx_unref	nopoll_ctx.c	/^void           nopoll_ctx_unref (noPollCtx * ctx)$/;"	f
+nopoll_ctx_unregister_conn	nopoll_ctx.c	/^void           nopoll_ctx_unregister_conn (noPollCtx  * ctx, $/;"	f
+nopoll_false	nopoll_decl.h	190;"	d
+nopoll_free	nopoll_decl.c	/^void nopoll_free (noPollPtr ref)$/;"	f
+nopoll_get_16bit	nopoll.c	/^int    nopoll_get_16bit (const char * buffer)$/;"	f
+nopoll_get_32bit	nopoll.c	/^int    nopoll_get_32bit (const char * buffer)$/;"	f
+nopoll_get_8bit	nopoll.c	/^int    nopoll_get_8bit  (const char * buffer)$/;"	f
+nopoll_get_bit	nopoll.c	/^int nopoll_get_bit (char byte, int position) {$/;"	f
+nopoll_int2bin	nopoll.c	/^char * nopoll_int2bin (int a, char *buffer, int buf_size) {$/;"	f
+nopoll_int2bin_print	nopoll.c	/^void nopoll_int2bin_print (noPollCtx * ctx, int value) {$/;"	f
+nopoll_io_get_engine	nopoll_io.c	/^noPollIoEngine * nopoll_io_get_engine (noPollCtx * ctx, noPollIoEngineType engine_type)$/;"	f
+nopoll_io_release_engine	nopoll_io.c	/^void             nopoll_io_release_engine (noPollIoEngine * engine)$/;"	f
+nopoll_io_wait_select_add_to	nopoll_io.c	/^nopoll_bool  nopoll_io_wait_select_add_to (int               fds, $/;"	f
+nopoll_io_wait_select_clear	nopoll_io.c	/^void    nopoll_io_wait_select_clear (noPollCtx * ctx, noPollPtr __fd_group)$/;"	f
+nopoll_io_wait_select_create	nopoll_io.c	/^noPollPtr nopoll_io_wait_select_create (noPollCtx * ctx) $/;"	f
+nopoll_io_wait_select_destroy	nopoll_io.c	/^void    nopoll_io_wait_select_destroy (noPollCtx * ctx, noPollPtr fd_group)$/;"	f
+nopoll_io_wait_select_is_set	nopoll_io.c	/^nopoll_bool      nopoll_io_wait_select_is_set (noPollCtx   * ctx,$/;"	f
+nopoll_io_wait_select_wait	nopoll_io.c	/^int nopoll_io_wait_select_wait (noPollCtx * ctx, noPollPtr __fd_group)$/;"	f
+nopoll_is_disconnected	nopoll_decl.h	105;"	d
+nopoll_is_disconnected	nopoll_decl.h	142;"	d
+nopoll_is_white_space	nopoll.c	/^nopoll_bool        nopoll_is_white_space  (char * chunk)$/;"	f
+nopoll_listener_accept	nopoll_listener.c	/^NOPOLL_SOCKET nopoll_listener_accept (NOPOLL_SOCKET server_socket)$/;"	f
+nopoll_listener_from_socket	nopoll_listener.c	/^noPollConn   * nopoll_listener_from_socket (noPollCtx      * ctx,$/;"	f
+nopoll_listener_new	nopoll_listener.c	/^noPollConn      * nopoll_listener_new (noPollCtx  * ctx,$/;"	f
+nopoll_listener_new_opts	nopoll_listener.c	/^noPollConn      * nopoll_listener_new_opts (noPollCtx      * ctx,$/;"	f
+nopoll_listener_set_certificate	nopoll_listener.c	/^nopoll_bool           nopoll_listener_set_certificate (noPollConn * listener,$/;"	f
+nopoll_listener_sock_listen	nopoll_listener.c	/^NOPOLL_SOCKET     nopoll_listener_sock_listen      (noPollCtx   * ctx,$/;"	f
+nopoll_listener_tls_new	nopoll_listener.c	/^noPollConn      * nopoll_listener_tls_new (noPollCtx  * ctx,$/;"	f
+nopoll_listener_tls_new_opts	nopoll_listener.c	/^noPollConn      * nopoll_listener_tls_new_opts (noPollCtx      * ctx,$/;"	f
+nopoll_log	nopoll_log.h	102;"	d
+nopoll_log	nopoll_log.h	103;"	d
+nopoll_log	nopoll_log.h	83;"	d
+nopoll_log	nopoll_log.h	88;"	d
+nopoll_log	nopoll_log.h	90;"	d
+nopoll_log_color_enable	nopoll_log.c	/^void     nopoll_log_color_enable (noPollCtx * ctx, nopoll_bool value)$/;"	f
+nopoll_log_color_is_enabled	nopoll_log.c	/^nopoll_bool    nopoll_log_color_is_enabled (noPollCtx * ctx)$/;"	f
+nopoll_log_enable	nopoll_log.c	/^void     nopoll_log_enable (noPollCtx * ctx, nopoll_bool value)$/;"	f
+nopoll_log_is_enabled	nopoll_log.c	/^nopoll_bool      nopoll_log_is_enabled (noPollCtx * ctx) $/;"	f
+nopoll_log_set_handler	nopoll_log.c	/^void            nopoll_log_set_handler (noPollCtx * ctx, noPollLogHandler handler, noPollPtr user_data)$/;"	f
+nopoll_loop_init	nopoll_loop.c	/^void nopoll_loop_init (noPollCtx * ctx) $/;"	f
+nopoll_loop_process	nopoll_loop.c	/^nopoll_bool nopoll_loop_process (noPollCtx * ctx, noPollConn * conn, noPollPtr user_data)$/;"	f
+nopoll_loop_process_data	nopoll_loop.c	/^void nopoll_loop_process_data (noPollCtx * ctx, noPollConn * conn)$/;"	f
+nopoll_loop_register	nopoll_loop.c	/^nopoll_bool nopoll_loop_register (noPollCtx * ctx, noPollConn * conn, noPollPtr user_data)$/;"	f
+nopoll_loop_stop	nopoll_loop.c	/^void nopoll_loop_stop (noPollCtx * ctx)$/;"	f
+nopoll_loop_wait	nopoll_loop.c	/^int nopoll_loop_wait (noPollCtx * ctx, long timeout)$/;"	f
+nopoll_msg_get_payload	nopoll_msg.c	/^const unsigned char * nopoll_msg_get_payload (noPollMsg * msg)$/;"	f
+nopoll_msg_get_payload_size	nopoll_msg.c	/^int          nopoll_msg_get_payload_size (noPollMsg * msg)$/;"	f
+nopoll_msg_is_final	nopoll_msg.c	/^nopoll_bool  nopoll_msg_is_final (noPollMsg * msg)$/;"	f
+nopoll_msg_is_fragment	nopoll_msg.c	/^nopoll_bool  nopoll_msg_is_fragment (noPollMsg * msg)$/;"	f
+nopoll_msg_join	nopoll_msg.c	/^noPollMsg  * nopoll_msg_join (noPollMsg * msg, noPollMsg * msg2)$/;"	f
+nopoll_msg_new	nopoll_msg.c	/^noPollMsg  * nopoll_msg_new (void)$/;"	f
+nopoll_msg_opcode	nopoll_msg.c	/^noPollOpCode nopoll_msg_opcode (noPollMsg * msg)$/;"	f
+nopoll_msg_ref	nopoll_msg.c	/^nopoll_bool  nopoll_msg_ref (noPollMsg * msg)$/;"	f
+nopoll_msg_ref_count	nopoll_msg.c	/^int          nopoll_msg_ref_count (noPollMsg * msg)$/;"	f
+nopoll_msg_unref	nopoll_msg.c	/^void         nopoll_msg_unref (noPollMsg * msg)$/;"	f
+nopoll_mutex_create	nopoll.c	/^noPollPtr   nopoll_mutex_create (void)$/;"	f
+nopoll_mutex_destroy	nopoll.c	/^void        nopoll_mutex_destroy (noPollPtr mutex)$/;"	f
+nopoll_mutex_lock	nopoll.c	/^void        nopoll_mutex_lock    (noPollPtr mutex)$/;"	f
+nopoll_mutex_unlock	nopoll.c	/^void        nopoll_mutex_unlock  (noPollPtr mutex)$/;"	f
+nopoll_ncmp	nopoll.c	/^nopoll_bool nopoll_ncmp (const char * string1, const char * string2, int bytes)$/;"	f
+nopoll_new	nopoll_decl.h	332;"	d
+nopoll_nonce	nopoll.c	/^nopoll_bool nopoll_nonce (char * buffer, int nonce_size)$/;"	f
+nopoll_realloc	nopoll_decl.c	/^noPollPtr nopoll_realloc(noPollPtr ref, size_t size)$/;"	f
+nopoll_return_if_fail	nopoll_decl.h	340;"	d
+nopoll_return_val_if_fail	nopoll_decl.h	353;"	d
+nopoll_set_16bit	nopoll.c	/^void   nopoll_set_16bit (int value, char * buffer)$/;"	f
+nopoll_set_32bit	nopoll.c	/^void   nopoll_set_32bit (int value, char * buffer)$/;"	f
+nopoll_set_bit	nopoll.c	/^void nopoll_set_bit (char * buffer, int position) {$/;"	f
+nopoll_show_byte	nopoll.c	/^void nopoll_show_byte (noPollCtx * ctx, char byte, const char * label) {$/;"	f
+nopoll_sleep	nopoll.c	/^void        nopoll_sleep (long microseconds)$/;"	f
+nopoll_strdup	nopoll.c	/^char      * nopoll_strdup (const char * buffer)$/;"	f
+nopoll_strdup_printf	nopoll.c	/^char      * nopoll_strdup_printf   (const char * chunk, ...)$/;"	f
+nopoll_strdup_printfv	nopoll.c	/^char  * nopoll_strdup_printfv    (const char * chunk, va_list args)$/;"	f
+nopoll_thread_handlers	nopoll.c	/^void        nopoll_thread_handlers (noPollMutexCreate  mutex_create,$/;"	f
+nopoll_timeval_substract	nopoll.c	/^int     nopoll_timeval_substract                  (struct timeval * a, $/;"	f
+nopoll_trim	nopoll.c	/^void        nopoll_trim  (char * chunk, int * trimmed)$/;"	f
+nopoll_true	nopoll_decl.h	194;"	d
+nopoll_vprintf_len	nopoll.c	/^int nopoll_vprintf_len (const char * format, va_list args)$/;"	f
+nopoll_win32_blocking_enable	nopoll_win32.c	/^int      nopoll_win32_blocking_enable (NOPOLL_SOCKET socket)$/;"	f
+nopoll_win32_gettimeofday	nopoll_win32.c	/^int nopoll_win32_gettimeofday(struct timeval *tv, noPollPtr notUsed)$/;"	f
+nopoll_win32_init	nopoll_win32.c	/^int  nopoll_win32_init (noPollCtx * ctx)$/;"	f
+nopoll_win32_nonblocking_enable	nopoll_win32.c	/^int      nopoll_win32_nonblocking_enable (NOPOLL_SOCKET socket)$/;"	f
+not_executed	nopoll_private.h	/^	nopoll_bool     not_executed;$/;"	m	struct:_noPollCtx
+not_executed_color	nopoll_private.h	/^	nopoll_bool     not_executed_color;$/;"	m	struct:_noPollCtx
+on_accept	nopoll_private.h	/^	noPollActionHandler on_accept;$/;"	m	struct:_noPollCtx
+on_accept_data	nopoll_private.h	/^	noPollPtr           on_accept_data;$/;"	m	struct:_noPollCtx
+on_close	nopoll_private.h	/^	noPollOnCloseHandler   on_close;$/;"	m	struct:_noPollConn
+on_close_data	nopoll_private.h	/^	noPollPtr              on_close_data;$/;"	m	struct:_noPollConn
+on_msg	nopoll_private.h	/^	noPollOnMessageHandler on_msg;$/;"	m	struct:_noPollConn
+on_msg	nopoll_private.h	/^	noPollOnMessageHandler on_msg;$/;"	m	struct:_noPollCtx
+on_msg_data	nopoll_private.h	/^	noPollPtr              on_msg_data;$/;"	m	struct:_noPollConn
+on_msg_data	nopoll_private.h	/^	noPollPtr              on_msg_data;$/;"	m	struct:_noPollCtx
+on_open	nopoll_private.h	/^	noPollActionHandler on_open;$/;"	m	struct:_noPollCtx
+on_open_data	nopoll_private.h	/^	noPollPtr           on_open_data;$/;"	m	struct:_noPollCtx
+on_ready	nopoll_private.h	/^	noPollActionHandler on_ready;$/;"	m	struct:_noPollConn
+on_ready	nopoll_private.h	/^	noPollActionHandler on_ready;$/;"	m	struct:_noPollCtx
+on_ready_data	nopoll_private.h	/^	noPollPtr           on_ready_data;$/;"	m	struct:_noPollConn
+on_ready_data	nopoll_private.h	/^	noPollPtr           on_ready_data;$/;"	m	struct:_noPollCtx
+op_code	nopoll_private.h	/^	short          op_code;$/;"	m	struct:_noPollMsg
+optionalChainFile	nopoll_private.h	/^	char * optionalChainFile;$/;"	m	struct:_noPollCertificate
+opts	nopoll_private.h	/^	noPollConnOpts      * opts;$/;"	m	struct:_noPollConn
+origin	nopoll_private.h	/^	char           * origin;$/;"	m	struct:_noPollConn
+payload	nopoll_private.h	/^	noPollPtr      payload;$/;"	m	struct:_noPollMsg
+payload_size	nopoll_private.h	/^	long int       payload_size;$/;"	m	struct:_noPollMsg
+peer_close_reason	nopoll_private.h	/^	char           * peer_close_reason;$/;"	m	struct:_noPollConn
+peer_close_status	nopoll_private.h	/^	int              peer_close_status;$/;"	m	struct:_noPollConn
+pending_buf	nopoll_private.h	/^	char             pending_buf[100];$/;"	m	struct:_noPollConn
+pending_buf_bytes	nopoll_private.h	/^	int              pending_buf_bytes;$/;"	m	struct:_noPollConn
+pending_desp	nopoll_private.h	/^	long int      pending_desp;$/;"	m	struct:_noPollConn
+pending_diff	nopoll_private.h	/^	long int      pending_diff;$/;"	m	struct:_noPollConn
+pending_line	nopoll_private.h	/^	char * pending_line;$/;"	m	struct:_noPollConn
+pending_msg	nopoll_private.h	/^	noPollMsg   * pending_msg;$/;"	m	struct:_noPollConn
+pending_ssl_accept	nopoll_private.h	/^	nopoll_bool   pending_ssl_accept;$/;"	m	struct:_noPollConn
+pending_write	nopoll_private.h	/^	char                * pending_write;$/;"	m	struct:_noPollConn
+pending_write_bytes	nopoll_private.h	/^	int                   pending_write_bytes;$/;"	m	struct:_noPollConn
+port	nopoll_private.h	/^	char           * port;$/;"	m	struct:_noPollConn
+post_ssl_check	nopoll_private.h	/^	noPollSslPostCheck      post_ssl_check;$/;"	m	struct:_noPollCtx
+post_ssl_check_data	nopoll_private.h	/^	noPollPtr               post_ssl_check_data;$/;"	m	struct:_noPollCtx
+previous_msg	nopoll_private.h	/^	noPollMsg           * previous_msg;$/;"	m	struct:_noPollConn
+previous_was_fragment	nopoll_private.h	/^	nopoll_bool           previous_was_fragment;$/;"	m	struct:_noPollConn
+privateKey	nopoll_private.h	/^	char * privateKey;$/;"	m	struct:_noPollCertificate
+private_key	nopoll_private.h	/^	char           * private_key;$/;"	m	struct:_noPollConn
+private_key	nopoll_private.h	/^	char * private_key;$/;"	m	struct:_noPollConnOpts
+protocol_version	nopoll_private.h	/^	int protocol_version;$/;"	m	struct:_noPollCtx
+protocols	nopoll_private.h	/^	char           * protocols;$/;"	m	struct:_noPollConn
+receive	nopoll_private.h	/^	noPollRead       receive;$/;"	m	struct:_noPollConn
+received_101	nopoll_private.h	/^	nopoll_bool     received_101; $/;"	m	struct:_noPollHandshake
+ref_mutex	nopoll_private.h	/^	noPollPtr             ref_mutex;$/;"	m	struct:_noPollConn
+ref_mutex	nopoll_private.h	/^	noPollPtr            ref_mutex;$/;"	m	struct:_noPollCtx
+ref_mutex	nopoll_private.h	/^	noPollPtr      ref_mutex;$/;"	m	struct:_noPollMsg
+refs	nopoll_private.h	/^	int                  refs;$/;"	m	struct:_noPollConnOpts
+refs	nopoll_private.h	/^	int             refs;$/;"	m	struct:_noPollCtx
+refs	nopoll_private.h	/^	int            refs;$/;"	m	struct:_noPollMsg
+refs	nopoll_private.h	/^	int    refs;$/;"	m	struct:_noPollConn
+remain_bytes	nopoll_private.h	/^	int            remain_bytes;$/;"	m	struct:_noPollMsg
+reuse	nopoll_private.h	/^	nopoll_bool          reuse;$/;"	m	struct:_noPollConnOpts
+role	nopoll_private.h	/^	noPollRole       role;$/;"	m	struct:_noPollConn
+send	nopoll_private.h	/^	noPollRead       send;$/;"	m	struct:_noPollConn
+serverName	nopoll_private.h	/^	char * serverName;$/;"	m	struct:_noPollCertificate
+session	nopoll_private.h	/^	NOPOLL_SOCKET    session;$/;"	m	struct:_noPollConn
+set	nopoll_io.c	/^	fd_set               set;$/;"	m	struct:_noPollSelect	file:
+show_critical_only	nopoll-regression-client.c	/^nopoll_bool show_critical_only = nopoll_false;$/;"	v
+skip_origin_header_check	nopoll_private.h	/^	nopoll_bool skip_origin_header_check;$/;"	m	struct:_noPollConnOpts
+ssl	nopoll_private.h	/^	SSL            * ssl;$/;"	m	struct:_noPollConn
+ssl_ctx	nopoll_private.h	/^	SSL_CTX        * ssl_ctx;$/;"	m	struct:_noPollConn
+ssl_protocol	nopoll_private.h	/^	noPollSslProtocol    ssl_protocol;$/;"	m	struct:_noPollConnOpts
+strcasecmp	nopoll_decl.h	127;"	d
+strlen	nopoll_decl.h	145;"	d
+test_01	nopoll-regression-client.c	/^nopoll_bool test_01 (void) {$/;"	f
+test_01_base64	nopoll-regression-client.c	/^nopoll_bool test_01_base64 (void) {$/;"	f
+test_01_masking	nopoll-regression-client.c	/^nopoll_bool test_01_masking (void) {$/;"	f
+test_01_strings	nopoll-regression-client.c	/^nopoll_bool test_01_strings (void) {$/;"	f
+test_02	nopoll-regression-client.c	/^nopoll_bool test_02 (void) {$/;"	f
+test_03	nopoll-regression-client.c	/^nopoll_bool test_03 (void) {$/;"	f
+test_04	nopoll-regression-client.c	/^nopoll_bool test_04 (int chunk_size) {$/;"	f
+test_04a	nopoll-regression-client.c	/^nopoll_bool test_04a (void) {$/;"	f
+test_04b	nopoll-regression-client.c	/^nopoll_bool test_04b (void) {$/;"	f
+test_04c	nopoll-regression-client.c	/^nopoll_bool test_04c (void) {$/;"	f
+test_05	nopoll-regression-client.c	/^nopoll_bool test_05 (void) {$/;"	f
+test_06	nopoll-regression-client.c	/^nopoll_bool test_06 (void) {$/;"	f
+test_07	nopoll-regression-client.c	/^nopoll_bool test_07 (void) {$/;"	f
+test_08	nopoll-regression-client.c	/^nopoll_bool test_08 (void) {$/;"	f
+test_09	nopoll-regression-client.c	/^nopoll_bool test_09 (void) {$/;"	f
+test_10	nopoll-regression-client.c	/^nopoll_bool test_10 (void) {$/;"	f
+test_11	nopoll-regression-client.c	/^nopoll_bool test_11 (void) {$/;"	f
+test_12	nopoll-regression-client.c	/^nopoll_bool test_12 (void) {$/;"	f
+test_13	nopoll-regression-client.c	/^nopoll_bool test_13 (void)$/;"	f
+test_13_test	nopoll-regression-client.c	/^nopoll_bool test_13_test (noPollCtx * ctx, const char * serverName, const char * _certificateFile, const char * _privateKey)$/;"	f
+test_14	nopoll-regression-client.c	/^nopoll_bool test_14 (void) {$/;"	f
+test_15	nopoll-regression-client.c	/^nopoll_bool test_15 (void) {$/;"	f
+test_16	nopoll-regression-client.c	/^nopoll_bool test_16 (void) {$/;"	f
+test_17	nopoll-regression-client.c	/^nopoll_bool test_17 (void) {$/;"	f
+test_17_send_and_receive_test	nopoll-regression-client.c	/^nopoll_bool test_17_send_and_receive_test (noPollCtx * ctx, noPollConn * conn, noPollConn * listener, $/;"	f
+test_18	nopoll-regression-client.c	/^nopoll_bool test_18 (void) {$/;"	f
+test_19	nopoll-regression-client.c	/^nopoll_bool test_19 (void) {$/;"	f
+test_20	nopoll-regression-client.c	/^nopoll_bool test_20 (void) {$/;"	f
+test_21	nopoll-regression-client.c	/^nopoll_bool test_21 (void) {$/;"	f
+test_22	nopoll-regression-client.c	/^nopoll_bool test_22 (void) {$/;"	f
+test_23	nopoll-regression-client.c	/^nopoll_bool test_23 (void) {$/;"	f
+test_23_get_connection_close_count	nopoll-regression-client.c	/^int test_23_get_connection_close_count (noPollCtx * ctx, noPollConn * conn) {$/;"	f
+test_24	nopoll-regression-client.c	/^nopoll_bool test_24 (void) {$/;"	f
+test_25	nopoll-regression-client.c	/^nopoll_bool test_25 (void) {$/;"	f
+test_25_check_cookie	nopoll-regression-client.c	/^nopoll_bool test_25_check_cookie (noPollCtx * ctx, const char * cookie) {$/;"	f
+test_26	nopoll-regression-client.c	/^nopoll_bool test_26 (void) {$/;"	f
+test_27	nopoll-regression-client.c	/^nopoll_bool test_27 (void) {$/;"	f
+test_28	nopoll-regression-client.c	/^nopoll_bool test_28 (void) {$/;"	f
+test_sending_and_check_echo	nopoll-regression-client.c	/^nopoll_bool test_sending_and_check_echo (noPollConn * conn, const char * label, const char * msg)$/;"	f
+tls_on	nopoll_private.h	/^	nopoll_bool   tls_on;$/;"	m	struct:_noPollConn
+uint16_t	nopoll_decl.h	141;"	d
+unmask_desp	nopoll_private.h	/^	int            unmask_desp;$/;"	m	struct:_noPollMsg
+upgrade_websocket	nopoll_private.h	/^	nopoll_bool     upgrade_websocket;$/;"	m	struct:_noPollHandshake
+wait	nopoll_private.h	/^	noPollIoMechWait       wait;$/;"	m	struct:_noPollIoEngine
+websocket_accept	nopoll_private.h	/^	char          * websocket_accept;$/;"	m	struct:_noPollHandshake
+websocket_key	nopoll_private.h	/^	char          * websocket_key;$/;"	m	struct:_noPollHandshake
+websocket_version	nopoll_private.h	/^	char          * websocket_version;$/;"	m	struct:_noPollHandshake
