@@ -46,6 +46,7 @@
  * @{
  */
 
+#define TLS 1
 #include <nopoll_conn.h>
 #include <nopoll_private.h>
 
@@ -369,6 +370,7 @@ char * __nopoll_conn_get_client_init (noPollConn * conn, noPollConnOpts * opts)
 /**
  * @internal Function that dumps all errors found on current ssl context.
  */
+#if TLS
 int nopoll_conn_log_ssl (noPollConn * conn)
 {
 #if defined(SHOW_DEBUG_LOG)
@@ -406,7 +408,8 @@ int nopoll_conn_log_ssl (noPollConn * conn)
 	
 	return (0);
 }
-
+#endif
+#if TLS
 int __nopoll_conn_tls_handle_error (noPollConn * conn, int res, const char * label, nopoll_bool * needs_retry)
 {
 	int ssl_err;
@@ -459,10 +462,11 @@ int __nopoll_conn_tls_handle_error (noPollConn * conn, int res, const char * lab
 	return -1;
 	
 }
-
+#endif
 /** 
  * @internal Default connection receive until handshake is complete.
  */
+#if TLS
 int nopoll_conn_tls_receive (noPollConn * conn, char * buffer, int buffer_size)
 {
 	int res;
@@ -548,7 +552,9 @@ SSL_CTX * __nopoll_conn_get_ssl_context (noPollCtx * ctx, noPollConn * conn, noP
 }
 
 noPollCtx * __nopoll_conn_ssl_ctx_debug = NULL;
+#endif
 
+#if TLS
 int __nopoll_conn_ssl_verify_callback (int ok, X509_STORE_CTX * store) {
 	char   data[256];
 	X509 * cert;
@@ -577,7 +583,8 @@ int __nopoll_conn_ssl_verify_callback (int ok, X509_STORE_CTX * store) {
 	}
 	return ok; /* return same value */
 }
-
+#endif
+#if TLS
 nopoll_bool __nopoll_conn_set_ssl_client_options (noPollCtx * ctx, noPollConn * conn, noPollConnOpts * options)
 {
 	nopoll_log (ctx, NOPOLL_LEVEL_DEBUG, "Checking to establish SSL options (%p)", options);
@@ -642,7 +649,7 @@ nopoll_bool __nopoll_conn_set_ssl_client_options (noPollCtx * ctx, noPollConn * 
 
 	return nopoll_true;
 }
-
+#endif
 
 /** 
  * @internal Internal implementation used to do a connect.
@@ -759,7 +766,7 @@ noPollConn * __nopoll_conn_new_common (noPollCtx       * ctx,
 
 		return NULL;
 	} /* end if */
-
+#if TLS
 	/* check for TLS support */
 	if (enable_tls) {
 		/* found TLS connection request, enable it */
@@ -883,6 +890,7 @@ noPollConn * __nopoll_conn_new_common (noPollCtx       * ctx,
 		nopoll_log (ctx, NOPOLL_LEVEL_DEBUG, "TLS I/O handlers configured");
 		conn->tls_on = nopoll_true;
 	} /* end if */
+#endif /*end if TLS*/
 
 	nopoll_log (ctx, NOPOLL_LEVEL_DEBUG, "Sending websocket client init: %s", content);
 	size = strlen (content);
@@ -1099,6 +1107,8 @@ nopoll_bool __nopoll_tls_was_init = nopoll_false;
  * recommended for any serious, non-command line programming).
  * 
  */
+
+#if TLS
 noPollConn * nopoll_conn_tls_new (noPollCtx  * ctx,
 				  noPollConnOpts  * options,
 				  const char * host_ip, 
@@ -1119,7 +1129,7 @@ noPollConn * nopoll_conn_tls_new (noPollCtx  * ctx,
 					 host_ip, host_port, host_name, 
 					 get_url, protocols, origin);
 }
-
+#endif
 /** 
  * @brief Allows to acquire a reference to the provided connection.
  *
@@ -1727,12 +1737,12 @@ void nopoll_conn_unref (noPollConn * conn)
 	/* release uncomplete message */
 	if (conn->previous_msg) 
 		nopoll_msg_unref (conn->previous_msg);
-
+#if TLS
 	if (conn->ssl)
 		SSL_free (conn->ssl);
 	if (conn->ssl_ctx)
 		SSL_CTX_free (conn->ssl_ctx);
-
+#endif
 	/* release handshake internal data */
 	if (conn->handshake) {
 		nopoll_free (conn->handshake->websocket_key);
@@ -2613,7 +2623,7 @@ noPollMsg   * nopoll_conn_get_msg (noPollConn * conn)
 
 	if (conn == NULL)
 		return NULL;
-
+#if TLS
 	nopoll_log (conn->ctx, NOPOLL_LEVEL_DEBUG, 
 		    "=== START: conn-id=%d (errno=%d, session: %d, conn->handshake_ok: %d, conn->pending_ssl_accept: %d) ===", 
 		    conn->id, errno, conn->session, conn->handshake_ok, conn->pending_ssl_accept);
@@ -2687,6 +2697,7 @@ noPollMsg   * nopoll_conn_get_msg (noPollConn * conn)
 		return NULL;
 		
 	} /* end if */
+#endif /*end if TLS*/
 
 	/* check connection status */
 	if (! conn->handshake_ok) {
@@ -4023,7 +4034,7 @@ nopoll_bool __nopoll_conn_accept_complete_common (noPollCtx * ctx, noPollConnOpt
 
 	nopoll_log (ctx, NOPOLL_LEVEL_DEBUG, "Connection received and accepted from %s:%s (conn refs: %d, ctx refs: %d)", 
 		    listener->host, listener->port, listener->refs, ctx->refs);
-
+#if TLS
 	if (listener->tls_on || tls_on) {
 		/* reached this point, ensure tls is enabled on this
 		 * session */
@@ -4188,6 +4199,7 @@ nopoll_bool __nopoll_conn_accept_complete_common (noPollCtx * ctx, noPollConnOpt
 		nopoll_log (ctx, NOPOLL_LEVEL_DEBUG, "Prepared TLS session to be activated on next reads (conn id %d)", conn->id);
 		
 	} /* end if */
+#endif /*end if TLS*/
 
 	/* release connection options */
 	__nopoll_conn_opts_release_if_needed (options);
