@@ -1,5 +1,7 @@
-##nopoll
-Websock
+## nopoll
+ASPLes/nopoll - OpenSource WebSocket toolkit
 
-##compile
+## compile
 `scons`
+
+## license
