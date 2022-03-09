@@ -1,6 +1,6 @@
 /*
  *  LibNoPoll: A websocket library
- *  Copyright (C) 2015 Advanced Software Production Line, S.L.
+ *  Copyright (C) 2013 Advanced Software Production Line, S.L.
  *
  *  This program is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU Lesser General Public License
@@ -195,31 +195,6 @@ void        nopoll_conn_opts_set_cookie (noPollConnOpts * opts, const char * coo
 	return;
 }
 
-/** 
- * @brief Allows to skip origin check for an incoming connection.
- *
- * This option is highly not recommended because the Origin header
- * must be provided by all WebSocket clients so the the server side
- * can check it.
- *
- * In most environments not doing so will make the connection to not succeed.
- *
- * Use this option just in development environment.
- *
- * @param opts The connection options to configure.
- *
- * @param check nopoll_bool Skip header check 
- *
- */
-void        nopoll_conn_opts_skip_origin_check (noPollConnOpts * opts, nopoll_bool skip_check)
-{
-	/* configure skip origin header check */
-	if (opts) 
-		opts->skip_origin_header_check = skip_check;
-
-	return;
-}
-
 
 /** 
  * @brief Allows to increase a reference to the connection options
@@ -287,31 +262,6 @@ void nopoll_conn_opts_set_reuse        (noPollConnOpts * opts, nopoll_bool reuse
 	return;
 }
 
-
-/** 
- * @brief Allows the user to configure the interface to bind the connection to.
- *
- * @param opts The connection options object. 
- *
- * @param interface The interface to bind to, or NULL for system default.
- *
- */
-void nopoll_conn_opts_set_interface    (noPollConnOpts * opts, const char * interface)
-{
-	if (opts == NULL)
-		return;
-
-	if (interface) {
-		/* configure interface */
-		opts->interface = nopoll_strdup (interface);
-	} else {
-		nopoll_free (opts->interface);
-		opts->interface = NULL;
-	} /* end if */
-
-	return;
-}
-
 void __nopoll_conn_opts_free_common  (noPollConnOpts * opts)
 {
 	if (opts == NULL)
@@ -336,9 +286,6 @@ void __nopoll_conn_opts_free_common  (noPollConnOpts * opts)
 
 	/* cookie */
 	nopoll_free (opts->cookie);
-
-	/* interface */
-	nopoll_free (opts->interface);
 
 	/* release mutex */
 	nopoll_mutex_destroy (opts->mutex);

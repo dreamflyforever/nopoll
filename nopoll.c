@@ -1,6 +1,6 @@
 /*
  *  LibNoPoll: A websocket library
- *  Copyright (C) 2015 Advanced Software Production Line, S.L.
+ *  Copyright (C) 2013 Advanced Software Production Line, S.L.
  *
  *  This program is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU Lesser General Public License
@@ -875,7 +875,7 @@ extern nopoll_bool __nopoll_tls_was_init;
  */
 void nopoll_cleanup_library (void)
 {
-	
+#if 0	
 	if (__nopoll_tls_was_init) {
 		EVP_cleanup ();
 		CRYPTO_cleanup_all_ex_data ();
@@ -884,7 +884,7 @@ void nopoll_cleanup_library (void)
 		/* notify the library isn't initialized */
 		__nopoll_tls_was_init = nopoll_false;
 	} /* end if */
-	
+#endif	
 	return;
 } /* end if */
 
@@ -982,7 +982,7 @@ void nopoll_cleanup_library (void)
  * itself. 
  *
  * After having that library installed in your system (check your OS
- * documentation), download lastest tar.gz noPoll library from: http://www.aspl.es/nopoll/downloads
+ * documentation), download lastest tar.gz noPoll library from: http://code.google.com/p/no-poll
  *
  * Then, to compile the library follow the standard autoconf voodoo:
  *
@@ -1005,17 +1005,6 @@ void nopoll_cleanup_library (void)
  * \code
  * >> cd test/
  * >> ./nopoll-regression-client
- * \endcode
- *
- * <b>Notes about preparing sources if you use SVN/GIT from https://github.com/asples/nopoll</b>
- *
- * In the case you want to work directly using SVN latest sources,
- * just download them from githubt as usual from: https://github.com/asples/nopoll
- *
- * After that, run the following command to prepare all compilation files:
- *
- * \code
- * >> ./autogen.sh
  * \endcode
  *
  * If everything looks fine, you can install nopoll into your system with the standard:
@@ -1115,7 +1104,7 @@ void nopoll_cleanup_library (void)
  * that handler:
  *
  * \code
- * void listener_on_message (noPollCtx * ctx, noPollConn * conn, noPollMsg * msg, noPollPtr  user_data) {
+ * void listener_on_message (noPollCtx * ctx, noPollConn * conn, noPollMsg * msg, noPollPtr * user_data) {
  *         // print the message (for debugging purposes) and reply
  *         printf ("Listener received (size: %d, ctx refs: %d): (first %d bytes, fragment: %d) '%s'\n", 
  *                 nopoll_msg_get_payload_size (msg),

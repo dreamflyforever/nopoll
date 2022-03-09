@@ -1,4 +1,4 @@
-env = Environment(CPPPATH = '.')
+env = Environment(CPPPATH = ['.', 'openssl'])
 src = Glob('*.c')
 env.Library('foslib',src, CFLAGS = ['-g', '-fcolor-diagnostics', '-Werror'], CC = 'clang')
 

@@ -1,6 +1,6 @@
 /*
  *  LibNoPoll: A websocket library
- *  Copyright (C) 2015 Advanced Software Production Line, S.L.
+ *  Copyright (C) 2013 Advanced Software Production Line, S.L.
  *
  *  This program is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU Lesser General Public License
@@ -39,12 +39,12 @@
 #ifndef __NOPOLL_PRIVATE_H__
 #define __NOPOLL_PRIVATE_H__
 
-#include <openssl/bio.h>
-#include <openssl/evp.h>
-#include <openssl/objects.h>
-#include <openssl/x509v3.h>
-#include <openssl/ssl.h>
-#include <openssl/err.h>
+#include "openssl/bio.h"
+#include "openssl/evp.h"
+#include "openssl/objects.h"
+#include "openssl/x509v3.h"
+#include "openssl/ssl.h"
+#include "openssl/err.h"
 
 #include <nopoll_handlers.h>
 
@@ -204,7 +204,6 @@ struct _noPollConn {
 	 * @internal Host name requested on the connection.
 	 */
 	char           * host_name;
-
 	/** 
 	 * @internal Origin requested on the connection.
 	 */
@@ -388,13 +387,6 @@ struct _noPollConnOpts {
 
 	/* cookie support */
 	char * cookie;
-
-	/* skip origin check flag */
-	nopoll_bool skip_origin_header_check;
-
-	/* network interface to bind to */
-	char * interface;
-
 };
 
 #endif

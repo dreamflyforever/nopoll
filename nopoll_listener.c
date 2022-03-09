@@ -1,6 +1,6 @@
 /*
  *  LibNoPoll: A websocket library
- *  Copyright (C) 2015 Advanced Software Production Line, S.L.
+ *  Copyright (C) 2013 Advanced Software Production Line, S.L.
  *
  *  This program is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU Lesser General Public License
@@ -219,9 +219,6 @@ noPollConn      * nopoll_listener_new_opts (noPollCtx      * ctx,
 	/* configure default handlers */
 	listener->receive = nopoll_conn_default_receive;
 	listener->send    = nopoll_conn_default_send;
-
-	/* configure connection options */
-	listener->opts    = opts;
 
 	nopoll_log (ctx, NOPOLL_LEVEL_DEBUG, "Listener created, started: %s:%s (socket: %d)", listener->host, listener->port, listener->session);
 
